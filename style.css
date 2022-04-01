@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+  
+
+/* NAVIGATION START */
+
+
+.container {
+width: 80%;
+margin: 0 auto;
+}
+
+header {
+
+background: #ff3c3c;
+text-align: center;
+height: 64px;
+font-family: sans-serif;
+
+}
+
+header::after {
+content: '';
+display: table;
+clear: both;
+}
+
+.logo {
+float: left;
+padding: 15px 0;
+color: rgb(255, 255, 255);
+font-size: xx-large;
+}
+
+nav {
+float: right;
+}
+
+nav ul {
+margin: 0;
+padding: 0;
+list-style: none;
+
+}
+
+nav li {
+display: inline-block;
+margin-left: 70px;
+padding-top: 23px;
+position: relative;
+}
+
+nav a {
+color: #444;
+text-decoration: none;
+text-transform: uppercase;
+font-size: 14px;
+}
+
+nav a:hover {
+color: #000;
+}
+
+nav a::before {
+content: '';
+display: block;
+height: 5px;
+background-color: #444;
+
+position: absolute;
+top: 0;
+width: 0%;
+
+transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+width: 100%;
+}
+.h3 {
+ font-size: xx-large;
+}
+/* NAVIGATION END */
+
+/*HERO styling */
+
+.landing {
+  background-image: url(/images/LasagnaWIDE.png);
+  background-repeat: no-repeat;
+ background-size: cover;
+  object-fit: cover; /*magic*/
+  font-family: sans-serif;
+  font-weight: 800;  
+  position: relative;
+  height: 800px;
+  text-align: left;
+}
+
+
+.welcome-text{
+font-size: 22pt;
+position: absolute;
+text-align: left;
+float: left;
+margin-top: 12%;
+margin-left: 15%;
+color: rgb(30, 29, 41);
+}
+
+
+.projects {  
+position: relative;
+border: none; 
+background-color: aliceblue;
+padding: 15px 20px;
+margin-top: 10px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+width: 200px;
+transition: 0.5s;
+background-size: 100% auto;
+text-transform: uppercase;
+color: rgb(156, 134, 134);            
+border-radius: 10px;
+display: block;
+}
